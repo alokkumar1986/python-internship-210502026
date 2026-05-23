@@ -1,0 +1,151 @@
+collection datatype :
+
+1) list
+2) tuple
+3) set
+4) dict
+
+
+List :   List is ordered, mutable and allows duplicate values.
+
+
+how to create a list :
+
+[]
+list()
+
+l = [1, 2, 3, 5, 6] #list of numbers
+
+l = [] #empty list
+
+l = ['apple', 'banana', 'orange', 'pineapple'] #list od strings
+
+l = [1, 'aptech', 3+3j, 3.14] # list of different type
+
+
+l = list((1, 2, 3, 5, 6))
+
+l = list()
+
+
+type() : To find the type of a value/variable
+
+
+print(type(l)) #<class 'list'>
+
+
+How to access the values in a list :
+
+We can access the values through index and index start from 0 from left and -1 from right.
+
+l = [1, 3, 5, 7, 8,9]
+
+print(l[-3]) #7
+
+print(l[3]) #7
+
+Slicing : 
+
+list[s:s:s]
+
+s : start index
+s : stop index
+s : step (optional) 1
+
+
+
+In slicing the stop index is always excluded.  step is the value for increment/ decrement of the index.
+if we don't mention start/stop index, the default is start : 0, stop: end index 
+
+l = [1, 3, 5, 7, 8, 9]
+
+l[:] #[1, 3, 5, 7, 8, 9]
+
+l[-2:] #[8, 9]
+
+l[::-1] #[9, 8, 7, 5, 3, 1]
+
+l[:-2] #[1, 3, 5, 7]
+
+l[2: :3] #[5, 9]
+
+l[-2::-3] #[8, 3]
+
+l[-2:-4:-3] #[8]
+
+
+Ordered, mutable and duplicate
+
+list always traversed from left index : 0 and from right index : -1
+
+This is called ordered traversed.
+
+l = [1, 3, 5, 7, 8, 9]
+
+l[1] = 2
+
+l # [1, 2, 5, 7, 8, 9]  #changed list
+
+l = [1, 3, 5, 7, 8, 9]
+
+l = []
+
+l  #empty list
+
+#=============================
+
+l = [1, 3, 3, 5, 7, 5, 7, 8, 9] 
+
+there is same values in different index. 
+
+l = [1, 'aptech', 3+3j, 3.14]
+
+type(l) #<class 'list'>
+
+type(l[2]) #<class 'complex'>
+
+type(l[0]) #<class 'int'>
+
+type(l[3]) #<class 'float'>  #Heterogenous
+
+
+#write a program to take string "Aptech Learning" and print the string as "ApTech LeArning"
+
+Methods used in List :
+
+len()  : To find length / no of values in a list
+append() : To add a new value(at the end)
+insert() : To add a new value (at a particular index)
+pop() : To remove the item and return the removed item
+remove() : To remove a value from a particular index
+clear() : To empty the list
+del  : To delete a value from list
+
+# Write a program to take a string "Jay Hind Bharat" and print "JAY Hind BHARAT"
+
+Also count the number of words in the string.
+
+
+tuple : It is similar to list except it is immutable.
+
+[] ---> ()
+
+tuple()
+
+append()/insert()/pop()/remove()  : Not there
+
+len()/del 
+
+
+Write 5 differences between list and tuple ?
+
+
+
+
+
+
+
+
+
+
+
