@@ -1,0 +1,189 @@
+string :
+
+In python, generally anything that is enclosed with '' or "" is called string
+
+example :
+
+a = 'Aptech learning'
+
+b = "Aptech learning"
+
+print(type(a))  #<class 'str'>
+print(type(b))  #<class 'str'>
+
+
+c = "Ram's House"
+
+d = 'Ram"s House'
+
+#====================================================================
+
+escape characters : These are character to format any output.
+
+\n : newline
+\b : backspace
+\t : horizontal tab
+\r : carriage return
+\/ : forword slash
+\' : single quote
+\" : double quote
+
+
+Accessing characters in a string :
+
+s = "Aptech Learning"
+
+s[0]  #A
+s[-1] #g
+
+
+Slicing in string :
+
+s = "Aptech Learning"
+s[::-1] #reverse the string
+
+
+Methods in string :
+
+len() :
+
+s = "Aptech Learning"
+print(len(s))
+
+upper()
+lower()
+count()
+
+strip():
+lstrip()
+rstrip()
+
+replace(s, s1)
+
+index()
+find()
+count()
+
+
+split()
+reversed()
+
+endswith() 
+startswith()
+
+
+#write a program to check entered string is palindrome or not.
+
+s  = input("Enter a string : ")
+
+print(s," is palindrome") if(s==s[::-1]) else print(s," is not palindrome") 
+
+#(s==s[::-1]) ? print(s," is palindrome") : print(s," is not palindrome") 
+
+#membership operator (in)
+
+a = "Aptech Learning" 
+if "Aptech" in a:
+  print('True')
+else:
+  print('False')
+
+
+
+
+Here are some common Python string programs:
+
+## Basic String Operations
+
+```python
+# String creation and basic operations
+text = "Hello, World!"
+print(text)                    # Hello, World!
+print(text.upper())            # HELLO, WORLD!
+print(text.lower())            # hello, world!
+print(text[0:5])               # Hello
+print(len(text))               # 13
+```
+
+## String Reversal
+
+```python
+def reverse_string(s):
+    return s[::-1]
+
+print(reverse_string("Python"))  # nohtyP
+```
+
+## Check Palindrome
+
+```python
+def is_palindrome(s):
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+
+print(is_palindrome("racecar"))     # True
+print(is_palindrome("A man a plan")) # True
+```
+
+## Count Vowels and Consonants
+
+```python
+def count_chars(text):
+    vowels = "aeiouAEIOU"
+    v_count = sum(1 for c in text if c in vowels)
+    c_count = sum(1 for c in text if c.isalpha() and c not in vowels)
+    return v_count, c_count
+
+vowels, consonants = count_chars("Hello World")
+print(f"Vowels: {vowels}, Consonants: {consonants}")
+```
+
+## Remove Duplicates from String
+
+```python
+def remove_duplicates(s):
+    return "".join(dict.fromkeys(s))
+
+print(remove_duplicates("hello"))  # helo
+```
+
+## String Reversal Word by Word
+
+```python
+def reverse_words(sentence):
+    words = sentence.split()
+    return " ".join(words[::-1])
+
+print(reverse_words("Hello World Python"))  # Python World Hello
+```
+
+## Check Anagram
+
+```python
+def are_anagrams(s1, s2):
+    s1 = s1.replace(" ", "").lower()
+    s2 = s2.replace(" ", "").lower()
+    return sorted(s1) == sorted(s2)
+
+print(are_anagrams("listen", "silent"))  # True
+```
+
+## Find Most Frequent Character
+
+```python
+from collections import Counter
+
+def most_frequent_char(text):
+    counter = Counter(text)
+    return counter.most_common(1)[0]
+
+print(most_frequent_char("hello"))  # ('l', 2)
+```
+
+Would you like me to explain any specific program in more detail or show other string operations?
+
+
+
+
+
+
