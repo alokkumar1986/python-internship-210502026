@@ -1,0 +1,47 @@
+set : 
+
+It is the collection which is unordered, unique and mutable.
+
+syntax :
+
+{}
+set()
+
+s = {1, 2, 3, 4}
+s1 = {100, 'Aptech', 3.14, 3+9j }
+s2 = set([1, 2, 3, 4]) #iterable list, tuple, string
+s3 = set((100, 'Aptech', 3.14, 3+9j))
+s4 = set() #empty set
+s5 = {}  #empty dict
+
+methods used in set :
+
+add() : To add an item/value
+update() : To add two more iterable
+remove() : To remove an item / value
+discard(): To remove an item / value
+pop()  : To remove an item random
+del 
+clear() : To empty the set
+
+There are few methods which is used to perform math operation 
+
+union : |  = To join two or more sets
+intersection : & = To find the items which are present in both sets
+difference : ~ = To find items which are present in 1st set and not in 2nd set
+symmetric difference : ^ : to find the items which are not common
+
+
+subset  :  <=  issubset()
+superset : >=  issuperset()
+disjoint : <>  isdisjoint()
+
+
+frozenset : It is same as set but readonly. (unordered, unique, immutable)
+
+s = frozenset([1, 2, 3])
+s1 = set([1, 4, 5, 6])
+s2 = s | s1
+
+
+
