@@ -1,0 +1,82 @@
+dict : It is the most used collection data structure of python. It stores data in the form of key, value pair.
+
+1) dict is muatable.
+
+2) dict is duplicated. but keys are unique. 
+
+3) dict values are duplicated.
+
+How to define :
+============================
+
+d = {} #empty dict
+
+d1 = {'name' : 'Ardhendu', 'age' : 32 }
+
+d2 = dict([('name','Ardhendu'), ('age', 32)])
+
+Here using {}, we write keys with values by : separated.
+
+
+How to access the values :
+
+We can access using key name 
+
+d1 = {'name' : 'Ardhendu', 'age' : 32 }
+
+print(d1['name']) #Ardhendu
+
+
+user = {
+'name' : 'Ardhendu',
+'age' : 32,
+'class' : 'MCA',
+'subjects' : ['C', 'C++', 'Java', 'Python', 'MySQL'],
+'marks' : {'semester1' : 8.6, 'semester2' : 9.2, 'semester3': 8.9}
+}
+
+user['marks']['semester3']
+
+get() : Using this method, we can access values
+
+
+user.get('marks').get('semester3')
+
+#dict is mutable 
+
+user = {
+'name' : 'Ardhendu',
+'age' : 32,
+'class' : 'MCA',
+'subjects' : ['C', 'C++', 'Java', 'Python', 'MySQL'],
+'marks' : {'semester1' : 8.6, 'semester2' : 9.2, 'semester3': 8.9}
+}
+
+
+user['name'] = 'Ashok'
+
+print(user)
+
+
+update() : adding a new key pair value or updating exting key value
+
+user = {
+'name' : 'Ardhendu',
+'age' : 32,
+'class' : 'MCA',
+'subjects' : ['C', 'C++', 'Java', 'Python', 'MySQL'],
+'marks' : {'semester1' : 8.6, 'semester2' : 9.2, 'semester3': 8.9}
+}
+
+d = {'gender': 'male }
+
+user.update(d)
+
+print(user)
+
+
+keys()  : list of keys
+values() : list of values
+items() : list of key and value pair tuple
+
+

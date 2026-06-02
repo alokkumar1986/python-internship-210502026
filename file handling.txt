@@ -1,0 +1,23 @@
+file handling ;
+
+To create,  read, write and update in file, we use file operation methods in python. 
+
+open()
+close()
+read()
+readlines()
+readline()
+write()
+
+
+delete
+exists
+os methods
+ 
+
+open('file path', 'mode')
+
+mode : 'r' (default) to read file content
+     : 'x' to create if not exists
+     : 'a' to append the data in the existing file, if file not exists, creates one
+     : 'w' to write the data in the existing file by erasing existing data
