@@ -1,0 +1,95 @@
+Oop : Object oriented programming
+
+python supports various types of programming paradigms.
+
+1) procedural  (function)
+2) object  (class and object)
+3) scripting 
+
+
+class : blueprint / a structure to contain class perporties.
+
+variables
+methods
+
+syntax :
+
+class ClassName:
+  class properties
+
+ClassName : Camelcase 
+properties : snakecase or pascalcase
+
+Object : A class is like a varible and object is its data.
+
+syntax :
+
+var = ClassName()
+
+example :
+
+class Person:
+   name, age = '', 0
+   def __init__(self, name, age):
+     self.name = name
+     self.age = age
+   def showData(self):
+     print(self.name, self.age
+
+p = Person("Aptech", 10)
+p.showData()
+
+
+self === It is current reference of the class. It is first parameter in every function inside a class. self is an user-defined name
+
+__ini__() === It is used to initialize class properties. It called when we create an object.
+              
+
+We can access the class properties using objectname.classproperty
+
+p.name
+p.age
+p.showData()
+
+
+class level variables / object level variable :
+
+
+The variables defined inside a class and outside of any function are called class level variables
+
+The variables defined inside a class but inside of any function/_init__() are called object level variables
+
+
+class Person:
+   name, age = '', 0 
+   def __init__(self, name, age):
+     self.name = name
+     self.age = age
+   def showData(self):
+     print(self.name, self.age
+
+print(Person.name)
+print(Person.age)
+p = Person("Aptech", 10)
+print(p.name)
+print(p.age)
+print(Person.name)
+print(Person.age)
+
+__str__(): It is a special method and it prints the class object details.
+
+class Person:
+   name, age = '', 0 
+   def __init__(self, name, age):
+     self.name = name
+     self.age = age
+   def showData(self):
+     print(self.name, self.age
+
+p = Person()
+print(p)
+
+inheritance :
+===========================
+
+

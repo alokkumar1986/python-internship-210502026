@@ -20,4 +20,22 @@ open('file path', 'mode')
 mode : 'r' (default) to read file content
      : 'x' to create if not exists
      : 'a' to append the data in the existing file, if file not exists, creates one
-     : 'w' to write the data in the existing file by erasing existing data
+     : 'w' to write the data in the existing file by erasing existing data, , if file not exists, creates one
+
+
+csv.reader()
+csv.writer()
+
+json_dump()
+json_loads()
+
+
+#create a text file and write content to it. Read the file and find out number of words in it.
+
+
+#write to a json file / csv file 
+
+
+
+
+
