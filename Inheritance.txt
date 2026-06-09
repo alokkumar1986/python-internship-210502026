@@ -1,0 +1,81 @@
+Inheritance :
+
+A class inherits all the properties of another class. The class which is inherited is  class child and from which inherited is parent class.
+
+
+The process is called inheritance.
+
+
+single, multlevel and multiple :
+
+e.g 
+
+
+class Parent:
+   property1
+   def property2():
+    pass
+
+class Child(Parent):
+   pass
+
+#=============================
+
+class Parent:
+   property1
+   def property2():
+    pass
+
+class Parent1(Parent):
+   property3
+   def property4():
+    pass
+
+class Child(Parent1):
+   pass
+
+#=====================================
+
+
+class Parent:
+   property1
+   def property2():
+    pass
+
+class Parent1:
+   property3
+   def property4():
+    pass
+
+class Child(Parent,Parent1):
+   pass
+
+
+
+#===================================================
+method overriding
+super()
+
+single/multiple/multilevel
+
+
+#write a program to find area of three class triangle, square, rectangle with method overriding and inheritance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

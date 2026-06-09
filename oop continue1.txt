@@ -1,0 +1,103 @@
+class / instance variable :
+
+
+class Person:
+  name = 'Aptech'
+  age = 10
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def showName(self):
+    print(self.name)
+
+
+p = Person("Ardhendu", 31)
+p.name
+Person.name 
+
+#============================================================
+
+instance , class, static method : 
+
+instance : In instance method, we must use self as first parameter of the function.
+To access instance method, we must create an object.
+
+class : In class method, we must use cls as first parameter of the function. @classmethod. to access class method, we can access using class name or an object.
+
+
+NB : classmethod has more pririty than instance method if instance and class method have same name
+
+static : in static method, we don't need any of self or cls as first parameter of the function. @staticmethod.
+
+We can access static method using object name but inside the function we only use class name to access class properties.
+
+
+
+class Person:
+  name = 'Aptech'
+  age = 10
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def showName(self):
+    print(self.name)
+
+  @classmethod
+  def showName(cls):
+   print(cls.name)
+
+
+p = Person("Ardhendu", 31)
+p.name
+Person.name 
+p.showName()
+Person.showName()
+
+
+access specifier/ modifier :  (Encapsulation):
+
+Wrapping of class variables/data with methods inside a class is called encapsulation. We can access those properties using class name, object name.
+
+there are three types of access specifier 
+
+public
+protected
+private
+
+class Person:
+ 
+  def __init__(self, name, age):
+    self.name = name
+    self.__age = age
+
+
+p = Person("Ardhendu", 31)
+print(p.name)
+print(p.__age)
+  
+#write a program to find square of a number using private specifier of a class. 
+
+
+private method :
+
+class Numb:
+  def __init__(self, num):
+    self.__num =  num
+  def __findSquare(self):
+    return self.__num**2
+
+n = Numb(10)
+print(n.__findSquare()) 
+
+Name Mangling : 
+
+obj._className__privateProperty
+
+  
+
+
+
+
+
