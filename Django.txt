@@ -1,0 +1,49 @@
+Django :  Django is web application framework. It is used develop a full-stack web application.
+
+
+Virtual Environment : 
+
+It is an environment just like real one which has no dependency with any other environment.   
+
+
+How to create a virtual environment:
+#========================================
+
+py -m venv "envName"
+
+cd envName
+cd scripts
+activate.bat <-------- virtual environment will be active
+
+
+cd ..
+cd ..
+
+installation of Django :
+#========================================
+
+pip install Django
+
+Create a Django Project 
+#========================================
+
+django-admin startproject "projectName"
+
+
+Run the Project 
+#=======================================
+
+py manage.py runserver
+
+
++++++++++++++++++++++++++++++++++++
+py manage.py makemigrations
+
+py manage.py migrate
++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
