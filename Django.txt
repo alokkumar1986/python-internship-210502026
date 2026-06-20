@@ -37,10 +37,25 @@ py manage.py runserver
 
 
 +++++++++++++++++++++++++++++++++++
-py manage.py makemigrations
+connection with MySQL : 
+
+MySQL installation :
+
+1) Download Xampp 
+2) Start MySQL from Xampp Control Panel
+3) Adding MySQL to settings.py
+4)py manage.py makemigrations
 
 py manage.py migrate
 +++++++++++++++++++++++++++++++++++
+
+py manage.py runserver
+
+http://127.0.0.1:8000
+http://localhost:8000
+
+
+
 
 
 
