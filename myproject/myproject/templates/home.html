@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -10,18 +12,23 @@
         <title>Home Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1 style='color:blue;text-align:center'>Hello, World from home.html!</h1>
+
+        <div class="main">
+          {% include "common/topbar.html" %}  
+          {% include "common/sidebar.html" %}
+          <div class="maincontent">
+            
+            <img src="{% static "images/home.png" %}" alt="homepage image" width="100%" />
         
-        <a href="">Home</a> &nbsp;
-        <a href="about">About Us</a> &nbsp;
-        <a href="register">Register</a>&nbsp; 
-        <a href="login">Login</a>&nbsp;
-        <script src="" async defer></script>
+          </div>
+        </div>
+
+        <script src="{% static "js/script.js" %}" async defer></script>
     </body>
 </html>

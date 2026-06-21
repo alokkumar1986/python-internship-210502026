@@ -1,48 +1,30 @@
-How to add a static page :
-
-settings.py : Register your app
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'myproject',
-]
-urls.py : Set path of the url
-
-from myproject import views
-
-path('', views.home, name='home')
-
-views.py : Create views.py 
-
-Myproject
-  myproject
-    urls.py
-    views.py //create here
-    settings.py
-
-and create your 
-
-home(request):
-  return HttpResponse("<h1>Hello World</h1>")
+1) How to add static js, css, images to html
+2) How load a html in another page
+3) How to create default/master template file and extend it to other html page
 
 
-How to load a HTML page :
+1) Adding js, css and images to HTML
 
-views.py :
+step1 : create a folder "static" 
 
-add render(request, 'home.html', {})
+static 
+  css
+    style.css
+  js
+    script.js
+  images
 
-templates: create a folder named 'templates'
+step2 :  link those css and js files in HTML
 
-create home.html inside it and write your html code in it
+{% load static %}  : add this line at the top of the HTML
 
+<link type="stylesheet" href="{% static "css/style.css" %}"
 
-HttpResponse vs render :
+<script src="{% static "js/script.js" %}"></script>
 
+<img src="" alt=""/>
 
+2) How add a html page into another html page
 
-
+{% include "common/topbar.html" %} 
+    
