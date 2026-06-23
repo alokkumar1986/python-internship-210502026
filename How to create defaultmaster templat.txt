@@ -1,0 +1,20 @@
+How to create default/master template file and extend it to other html page
+#==========================================================================
+
+
+step : 1 
+
+create master template file i.e master.html inside template folder
+
+
+create different block section which are different for different page
+
+e.g
+
+ {% block title %}{% endblock title %} 
+ {% block topbar %}{% endblock topbar %}
+ {% block maincontent %}{% endblock maincontent %}
+
+step 2 :
+
+ In all html page remove all the html except title, topbar and maincontent section and  wrap the section with respective blocks

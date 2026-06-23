@@ -1,0 +1,61 @@
+How to create a model :
+#=============================
+
+step 1 : create an app
+
+django-admin startapp "AppName"
+
+
+django-admin startapp demo
+
+
+myproject
+  myproject
+  manage.py
+  dbsqllite3
+  demo 
+     admin.py
+     models.py
+     apps.py
+     views.py
+
+step 2 : Register the app
+
+in settings.py add 'demo' in INSTALLED_APPS section
+
+step 3 :
+
+I will create a model class
+
+
+create table tableName 
+(columnName1 datatype constraints,
+columnName2 datatype constraints,
+columnName3 datatype constraints)
+
+create table Students
+(name varchar(100),
+ email varchar(200))
+
+
+py manage.py makemigrations
+py manage.py migrate
+
+
+Django shell :  
+
+This is used to write MySQL query to perform CRUD operations
+
+py manage.py shell
+
+from demo.models import Student
+
+
+>>> students = Student.objects.all().values()
+>>> students
+
+#=============================================
+
+>>> student = Student(name="Alok", email="alok@gmail.com", password="Alok@1234", gender="Male", course="Django", rollno= 120020)
+>>> student.save()
+
