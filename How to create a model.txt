@@ -48,7 +48,11 @@ This is used to write MySQL query to perform CRUD operations
 
 py manage.py shell
 
+
 from demo.models import Student
+
+
+select:
 
 
 >>> students = Student.objects.all().values()
@@ -56,6 +60,16 @@ from demo.models import Student
 
 #=============================================
 
+insert :
+
 >>> student = Student(name="Alok", email="alok@gmail.com", password="Alok@1234", gender="Male", course="Django", rollno= 120020)
 >>> student.save()
 
+
+#===============================================
+
+
+update :
+
+
+delete :

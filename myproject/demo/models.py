@@ -9,4 +9,10 @@ class Student(models.Model):
     course = models.CharField(max_length=100)
     rollno = models.IntegerField()
     
+class Course(models.Model):
+    name = models.CharField(max_length=100)
+    duration = models.IntegerField()
+    price = models.IntegerField()
+    
+class Mark
 
