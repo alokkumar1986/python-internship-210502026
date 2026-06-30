@@ -1,0 +1,48 @@
+How to add a static page :
+
+settings.py : Register your app
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myproject',
+]
+urls.py : Set path of the url
+
+from myproject import views
+
+path('', views.home, name='home')
+
+views.py : Create views.py 
+
+Myproject
+  myproject
+    urls.py
+    views.py //create here
+    settings.py
+
+and create your 
+
+home(request):
+  return HttpResponse("<h1>Hello World</h1>")
+
+
+How to load a HTML page :
+
+views.py :
+
+add render(request, 'home.html', {})
+
+templates: create a folder named 'templates'
+
+create home.html inside it and write your html code in it
+
+
+HttpResponse vs render :
+
+
+
+

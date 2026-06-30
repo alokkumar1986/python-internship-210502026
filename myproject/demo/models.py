@@ -14,5 +14,5 @@ class Course(models.Model):
     duration = models.IntegerField()
     price = models.IntegerField()
     
-class Mark
+#class Mark
 

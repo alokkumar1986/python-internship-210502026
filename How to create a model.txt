@@ -58,6 +58,9 @@ select:
 >>> students = Student.objects.all().values()
 >>> students
 
+>>> student1 = Student.objects.get(id=1)
+>>>student1
+
 #=============================================
 
 insert :
@@ -71,5 +74,17 @@ insert :
 
 update :
 
+>>> student1 = Student.objects.get(id=1)
+>>> student1
+
+>>> student1.name = 'AlokKumar'
+>>> student1.email = 'alokkumar@gmail.com'
+>>> student1.save()
+
+
 
 delete :
+
+
+>>> student2 = Student.objects.get(id=2)
+>>> student2.delete()
